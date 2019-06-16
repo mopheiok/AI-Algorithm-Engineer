@@ -1,0 +1,57 @@
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/huajh/huajh-awesome-latex-cv
+%
+% Author:
+% Junhao Hua
+
+
+
+%Section: Work Experience at the top
+\sectionTitle{工作/项目经历}{\faCode}
+ 
+\begin{experiences}
+			
+ \experience
+    {现在}   {机器学习算法工程师}{ 中兴通讯-大数据二部}{ VMAX-R算法应用团队}
+    {2017年10月} {
+                    \vskip 0.05cm
+                    \begin{itemize}\setlength{\itemsep}{0.15cm}
+                        \item \textbf{无线精准规划}：利用手机与基站的测量报告数据完成基站选址推荐。采用DBScan算法对弱覆盖区域进行聚类，由自适应覆盖半径和规则进行该区域的站址推荐。其中采用KD-Tree对空间数据建立索引，优化整个加站流程。模型预测建设基站后覆盖率有2\textasciitilde4\%的提升效果；
+                        \item \textbf{电信诈骗号码识别}：负责利用电信运营商的通信大数据研究和设计识别算法。通过爬取样本标签、提取用户的通信行为特征为识别算法建立决策树模型。模型精度达0.902，召回率达0.955，在局点验证中从给定的30个诈骗号码中识别出了25个号码；
+                        \item \textbf{店铺选址推荐}：负责利用手机与基站的测量报告数据完成目标人群热力统计。其中由于手机与基站通信数据的特点，如何进行人车区分称为统计的难点。通过采用时间窗的方式完成人流热力统计，结合用户属性进行目标人群筛选。进而将目标人群密集区域推荐为店铺候选地址。
+                    \end{itemize}
+                  }
+                    {DBScan, 决策树, 不平衡学习, Python, Spark, Kafka, Spark-Streaming}
+  \emptySeparator
+  \experience
+    { 2017年9月} {算法、数据挖掘工程师}{ 中兴通讯-大数据二部}{ 数据挖掘团队}
+    {2016年2月}    {
+                    \vskip 0.05cm
+                      \begin{itemize}\setlength{\itemsep}{0.15cm}
+                        \item \textbf{网元异常检测}：采用无监督的pLSA/LDA模型推断后验概率P(动作|词)实现动作类别归类;
+                        \item \textbf{景区人流热力分析}：以及采用监督学习（KNN,SVM）对每帧图像的字典分类;                    
+                        \item \textbf{用户轨迹分析}：提出一种简单的投票（``voting''）方法 实现单相机中的多目标检测任务。
+                        \item \textbf{手机基站PRB（物理资源块）利用率预测}：\faGithub: \link{https://github.com/huajh/action_recognition} {github.com/huajh/action\_recognition}                                                                                          
+                      \end{itemize}
+                    }
+                    {动作识别, 聚类, GBDT, Voting, Bagging\&Boosting}
+	
+  \emptySeparator
+  \experience
+  {2016年1月} {数据采集、自动化部署架构核心成员}{中兴通讯-大数据二部}{VMAX项目质量团队}
+  {2015年5月 }    {
+                    \vskip 0.05cm
+				  	\begin{itemize}\setlength{\itemsep}{0.15cm}
+				  		\item \textbf{监控网站}：负责Python构建爬虫，采集项目持续构建数据（基于Jenkins生成数据），搭建监控网站；
+				  		% 将GMM，student-t有限混合模型以及基于Dirichlet process的无限混合模型应用于聚类问题；
+				  		\item \textbf{自动化部署架构}：负责大数据平台应用程序自动化部署架构开发
+				  		% 用变分贝叶斯方法推断这三个模型，并推导出详细的算法流程；
+				  		% \item 通过考虑laplacian graph 提升了以上三种方法的性能。
+				  		% \item \faGithub: \link{https://github.com/huajh/variational_bayesian_clusterings} {github.com/huajh/variational\_bayesian\_clusterings}                                                                                    
+				  	\end{itemize}
+				  }
+				  {Jenkins, urllib, Chef, Selenium, Python, Linux/Shell}
+
+\end{experiences}
